@@ -213,7 +213,7 @@ fi
 
 if [ ! -x "$CACHE_PATH/bin/flutter" ]; then
 	if [ "$CHANNEL" = "master" ] || [ "$CHANNEL" = "main" ]; then
-		git clone -b "$CHANNEL" https://github.com/flutter/flutter.git "$CACHE_PATH"
+		git clone -b "Stable.Apparyllis" https://github.com/ApparyllisOrg/flutter/flutter.git "$CACHE_PATH"
 		if [ "$VERSION" != "any" ]; then
 			git config --global --add safe.directory "$CACHE_PATH"
 			(cd "$CACHE_PATH" && git checkout "$VERSION")
